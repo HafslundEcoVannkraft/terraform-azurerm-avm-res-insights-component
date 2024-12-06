@@ -136,3 +136,9 @@ variable "tags" {
   default     = null
   description = "(Optional) Tags of the resource."
 }
+
+variable "force_customer_storage_for_profiler" {
+  type        = bool
+  default     = false
+  description = "(Optional) Disable Non-Azure AD based Auth. Defaults to false."
+}

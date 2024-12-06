@@ -15,6 +15,7 @@ resource "azurerm_application_insights" "this" {
   sampling_percentage                   = var.sampling_percentage
   tags                                  = var.tags
   workspace_id                          = var.workspace_id
+  force_customer_storage_for_profiler   = var.force_customer_storage_for_profiler
 }
 
 # required AVM resources interfaces
